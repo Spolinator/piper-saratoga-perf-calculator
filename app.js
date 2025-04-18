@@ -84,7 +84,7 @@ function mainMenu(){
    $.ajax({
       type: 'GET',
       url: 'https://api.checkwx.com/metar/EBBR',
-      headers: { 'X-API-Key': '435073adb9414164890db653ea' },
+      headers: { 'X-API-Key': 'API KEY HERE' },
       dataType: 'json',
       success: function (result) {
         console.log(result.data[0])
