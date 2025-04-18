@@ -1,0 +1,91 @@
+<div class="WeightAndBalance">
+    <div class="plane">
+        <div class="row">
+            <div class="col">
+                <div class="box" id="back">
+                    BACK
+                </div>
+            </div>
+            <div class="col" style="text-align: center;">
+                Payload:
+                <span>KGS<label class="form-switch">
+                <input class="kgs inputval" type="checkbox" checked>
+                <i></i>
+                </label>LBS</span>
+                <div>
+                    Fuel:
+                    <input type="radio" name="fuel" class="fUnit" value="L"> L
+                    <input type="radio" name="fuel" class="fUnit" value="Gal"> Gal
+                    <input type="radio" name="fuel" class="fUnit" value="Lbs" checked> Lbs
+                    <input type="radio" name="fuel" class="fUnit" value="KG"> Kg
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <input id="front-storage" class="inputval" value = 0 type="text">
+            </div>
+        </div>
+        <div class="row passengers">
+            <div class="col-4" style="text-align: center;">
+                <input id="fuelLeft" class="inputval fuel" value = 0 type="text">
+            </div>
+            <div class="col-2">
+                <input id="p1" class="inputval passenger" value = 0 type="text">
+                <input id="p3" class="inputval passenger" value = 0 type="text">
+                <input id="p5" class="inputval passenger" value = 0 type="text">
+            </div>
+            <div class="col-2">
+                <input id="p2" class="inputval passenger" value = 0 type="text">
+                <input id="p4" class="inputval passenger" value = 0 type="text">
+                <input id="p6" class="inputval passenger" value = 0 type="text">
+            </div>
+            <div class="col-4" style="text-align: center;">
+                <input id="fuelRight" class="inputval fuel" value = 0 type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="text-align: center;">
+                <input id="rear-storage" class="inputval" value = 0 type="text">
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">Basic Empty weight: <span id="BEW">2390</span></div>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>ZFW</th>
+                <td id="ZFW">2390</td>
+                <th>Loaded Fuel</th>
+                <td id="loaded-fuel">0</td>
+            </tr>
+            <tr>
+                <th>Taxi Fuel</th>
+                <td id="taxi-fuel">15</td>
+                <th>T/O Weight</th>
+                <td id="to-weight">2390</td>
+            </tr>
+            <tr>
+                <th>Fuel burn off</th>
+                <td id="fuel-bo">Confirm FP</td>
+                <th>Landing Weight</th>
+                <td id="landing-weight">Confirm FP</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-3">
+            <div class="box check-limits">
+                Check Limits
+            </div>
+        </div>
+        <div class="col-4">
+            Limits: <span id="limits">Check</span>
+        </div>
+        <div class="col-5">
+            <div class="box CG">
+                Show CG Graph
+            </div>
+        </div>
+    </div>
+</div>

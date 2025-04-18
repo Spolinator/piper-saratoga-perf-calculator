@@ -1,0 +1,105 @@
+
+<div class="fp">
+    <div class="row">
+        <span class="box" id="back">BACK</span>
+        <span class="box" id="next-page">Next Page </span>
+    </div>
+    <div class="row" style="margin-left: 40px;">
+        <div class="inputrow">
+            <span style="width:49%"></span>
+            <span>DEP</span>
+            <span>ARR</span>
+        </div>
+        <div class="inputrow">
+            <span>Airfield</span>
+            <span>ICAO</span>
+            <span> <input type="text" class="inputval" id="dep-airfield"> </span>
+            <span> <input type="text" class="inputval" id="arr-airfield"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Choose runway:</span>
+            <span></span>
+            <span>  
+                <div class="dropdown">
+                    <button onclick="depRWY()" class="dropbtn">Select</button>
+                    <div id="depRWY" class="dropdown-content">
+                    </div>
+                </div> 
+            </span>
+            <span> 
+                <div class="dropdown">
+                <button onclick="arrRWY()" class="dropbtn">Select</button>
+                <div id="arrRWY" class="dropdown-content">
+                </div>
+              </div>
+            </span>
+        </div>
+        <div class="inputrow">
+            <span>RWY Track</span>
+            <span>HDG</span>
+            <span> <input type="text" class="inputval" id="dep-rwytrack"> </span>
+            <span> <input type="text" class="inputval" id="arr-rwytrack"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Elevation</span>
+            <span>Ft</span>
+            <span> <input type="text" class="inputval" id="dep-elevation"> </span>
+            <span> <input type="text" class="inputval" id="arr-elevation"> </span>
+        </div>
+        <div class="inputrow">
+            <span>QNH</span>
+            <span>mb</span>
+            <span> <input type="text" class="inputval" id="dep-qnh"> </span>
+            <span> <input type="text" class="inputval" id="arr-qnh"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Temperature</span>
+            <span>°C</span>
+            <span> <input type="text" class="inputval" id="dep-temp"> </span>
+            <span> <input type="text" class="inputval" id="arr-temp"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Wind dir</span>
+            <span>HDG</span>
+            <span> <input type="text" class="inputval" id="dep-winddir"> </span>
+            <span> <input type="text" class="inputval" id="arr-winddir"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Wind Speed</span>
+            <span>Kts</span>
+            <span> <input type="text" class="inputval" id="dep-windspeed"> </span>
+            <span> <input type="text" class="inputval" id="arr-windspeed"> </span>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Route</h2>
+    </div>
+    <div class="row" style="margin-left: 40px;">
+        <div class="inputrow">
+            <span>Cruise Altitude</span>
+            <span>Ft</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-alt"> </span>
+        </div>
+        <div class="inputrow">
+            <span>Cruise OAT</span>
+            <span>°C</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-oat"> </span>
+        </div><div class="inputrow">
+            <span>Wind dir</span>
+            <span>HDG</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-winddir"> </span>
+        </div><div class="inputrow">
+            <span>Wind Speed</span>
+            <span>Kt</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-windspeed"> </span>
+        </div><div class="inputrow">
+            <span>RPM</span>
+            <span>rpm</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-rpm"> </span>
+        </div><div class="inputrow">
+            <span>Total trip distance</span>
+            <span>NM</span>
+            <span class="routeval" > <input type="text" class="inputval" id="cruise-tripdist"> </span>
+        </div>
+    </div>
+</div>
